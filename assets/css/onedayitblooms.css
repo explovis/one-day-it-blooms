@@ -3,11 +3,20 @@
 /* Google Sans is hosted on the site (file from the Google Fonts download), nothing is loaded from Google */
 @font-face {
   font-family: "Google Sans";
-  src: url("../fonts/GoogleSans.ttf") format("truetype");
-  font-weight: 400 700;
+  src: url("../fonts/static/GoogleSans-Regular.ttf") format("truetype");
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Google Sans";
+  src: url("../fonts/static/GoogleSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 /* MonteCarlo, only for the hero title. One weight, no cyrillic */
 @font-face {
