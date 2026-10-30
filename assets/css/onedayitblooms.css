@@ -937,7 +937,7 @@ p { margin: 0 0 1em; }
 
 /* phones: privacy and terms on their own lines, the icons together below them */
 @media (max-width: 700px) {
-  .foot ul li:has(> a:is([href*="privacy/"], [href*="terms/"])) { flex-basis: 100%; }
+  .foot ul li:has(> a:is([href*="privacy"], [href*="terms"])) { flex-basis: 100%; }
 }
 
 /* ladybug: walks back and forth on the top edge of the block it sits in (markup is in the page) */
