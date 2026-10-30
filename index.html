@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Explovis: a one-person indie game studio</title>
+<meta name="description" content="Explovis is a one-person indie studio making games around ideas, not genres. The first one, One Day It Blooms, comes to Android on 10 November 2026.">
+<link rel="canonical" href="https://explovis.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Explovis">
+<meta property="og:title" content="Explovis: games around ideas, not genres">
+<meta property="og:description" content="A one-person indie studio. The first game, One Day It Blooms, comes to Android on 10 November 2026.">
+<meta property="og:url" content="https://explovis.com/">
+<meta property="og:image" content="https://explovis.com/assets/img/og-studio.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Soft hills under a starry evening sky, and an explorer with a backpack on the nearest hill looking up through binoculars">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#141A33">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/studio/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/studio/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/studio.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://explovis.com/#studio",
+      "name": "Explovis",
+      "url": "https://explovis.com/",
+      "logo": "https://explovis.com/assets/img/studio/logo-512.png",
+      "email": "support@explovis.com",
+      "description": "A one-person indie game studio making games around ideas, not genres.",
+      "sameAs": [
+        "https://www.youtube.com/@explovisgames",
+        "https://www.tiktok.com/@explovisgames",
+        "https://www.instagram.com/explovisgames",
+        "https://www.reddit.com/r/explovisgames/",
+        "https://www.facebook.com/explovisgames",
+        "https://www.pinterest.com/explovisgames/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://explovis.com/#website",
+      "url": "https://explovis.com/",
+      "name": "Explovis",
+      "inLanguage": "en",
+      "publisher": { "@id": "https://explovis.com/#studio" }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="hero">
+<div class="stars stars--far" aria-hidden="true"></div>
+<div class="stars stars--near" aria-hidden="true"></div>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./">Explovis</a>
+    <nav aria-label="Site">
+      <a class="nav-about" href="#about">About</a>
+      <a href="onedayitblooms/">One Day It Blooms</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+  <div class="statement">
+    <h1>Explovis makes games around ideas, not genres.</h1>
+    <p>It’s a one-person studio: no investors, no publisher, no big budget. Just me and a long list of ideas, and the first one comes out on 10 November.</p>
+  </div>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  class="scene scene--gamings"
+  viewBox="0 0 1600 560"
+  preserveAspectRatio="xMidYMax slice"
+  aria-hidden="true"
+  focusable="false"
+>
+  <style>
+    .scene--gamings {
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .scene--gamings .sc-launch {
+      animation: gms-tile-launch 8.5s linear infinite;
+      animation-delay: -3.2s;
+    }
+
+    .scene--gamings .sc-exhaust {
+      transform-origin: -15px 0;
+      animation: gms-exhaust 1.1s ease-in-out infinite alternate;
+    }
+
+    .scene--gamings .sc-particle {
+      animation: gms-particle 1.6s linear infinite;
+    }
+
+    .scene--gamings .sc-particle-b {
+      animation-delay: -.55s;
+    }
+
+    .scene--gamings .sc-particle-c {
+      animation-delay: -1.1s;
+    }
+
+    .scene--gamings .sc-lamplight {
+      animation: gms-lamplight 4.8s ease-in-out infinite;
+    }
+
+    @keyframes gms-tile-launch {
+      0% {
+        opacity: 0;
+        transform: translate(-52px, 35px) scale(.88);
+      }
+      13%, 73% {
+        opacity: 1;
+      }
+      89%, 100% {
+        opacity: 0;
+        transform: translate(56px, -38px) scale(1);
+      }
+    }
+
+    @keyframes gms-exhaust {
+      from {
+        transform: scaleX(.86);
+        opacity: .8;
+      }
+      to {
+        transform: scaleX(1.1);
+        opacity: 1;
+      }
+    }
+
+    @keyframes gms-particle {
+      from {
+        opacity: .6;
+        transform: translateX(0);
+      }
+      to {
+        opacity: 0;
+        transform: translateX(-24px);
+      }
+    }
+
+    @keyframes gms-lamplight {
+      0%, 100% { opacity: .8; }
+      50% { opacity: 1; }
+    }
+
+    @media (max-width: 600px) {
+      .scene--gamings .sc-rocket-mobile {
+        transform: translateX(-230px);
+      }
+
+      .scene--gamings .sc-observer-mobile {
+        transform-origin: 1042px 451.5px;
+        transform: translate(-230px, 24px) rotate(-13deg);
+      }
+
+      .scene--gamings .sc-lantern-mobile {
+        transform: translate(-230px, 34px);
+      }
+    }
+
+    .scene--gamings[data-motion="off"] .sc-motion {
+      animation: none;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .scene--gamings .sc-motion {
+        animation: none;
+      }
+    }
+  </style>
+
+  <defs>
+    <radialGradient
+      id="gms-sc-glow"
+      cx="960" cy="372" r="760"
+      gradientTransform="translate(960 372) scale(1 .42) translate(-960 -372)"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop offset="0" stop-color="#FFD7A1" stop-opacity=".9"/>
+      <stop offset=".2" stop-color="#F6AE8E" stop-opacity=".52"/>
+      <stop offset=".52" stop-color="#B98AA6" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#7C79A8" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="gms-sc-lamp">
+      <stop offset="0" stop-color="#FFD58F" stop-opacity=".55"/>
+      <stop offset=".35" stop-color="#FFC46E" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#FFC46E" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient
+      id="gms-sc-far"
+      x1="0" y1="340" x2="0" y2="480"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop offset="0" stop-color="#6E6A98"/>
+      <stop offset="1" stop-color="#5D5B8B"/>
+    </linearGradient>
+
+    <linearGradient
+      id="gms-sc-mid"
+      x1="0" y1="420" x2="0" y2="530"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop offset="0" stop-color="#454D7D"/>
+      <stop offset="1" stop-color="#3B4371"/>
+    </linearGradient>
+
+    <linearGradient
+      id="gms-sc-exhaust"
+      x1="-88" y1="0" x2="-13" y2="0"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop offset="0" stop-color="#A7DCC9" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#AFE4D0" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#D9F8E5" stop-opacity=".72"/>
+    </linearGradient>
+
+    <linearGradient
+      id="gms-sc-core"
+      x1="-51" y1="0" x2="-13" y2="0"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop offset="0" stop-color="#BDE9CE" stop-opacity="0"/>
+      <stop offset=".6" stop-color="#F8F0CD" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#FFF9E9"/>
+    </linearGradient>
+
+    <radialGradient id="gms-sc-thrust-glow">
+      <stop offset="0" stop-color="#D6F4CF" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#B3E4CA" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect
+    class="glow"
+    width="1600"
+    height="560"
+    fill="url(#gms-sc-glow)"
+  />
+
+  <g class="sc-rocket-mobile">
+    <g transform="translate(1105 265)">
+      <g class="sc-motion sc-launch">
+        <g transform="rotate(-34)">
+          <ellipse
+            cx="-17" cy="0" rx="44" ry="25"
+            fill="url(#gms-sc-thrust-glow)"
+          />
+
+          <g class="sc-motion sc-exhaust">
+            <path
+              d="M-13 -6 C-29 -7 -54 -6 -88 0 C-54 6 -29 7 -13 6Z"
+              fill="url(#gms-sc-exhaust)"
+            />
+            <path
+              d="M-13 -3.5 Q-31 -4.5 -52 0 Q-31 4.5 -13 3.5Z"
+              fill="url(#gms-sc-core)"
+            />
+            <path
+              d="M-13 -1.6 L-31 0 -13 1.6Z"
+              fill="#FFF9E9"
+              opacity=".92"
+            />
+          </g>
+
+          <g fill="#C1E8D1">
+            <rect
+              class="sc-motion sc-particle"
+              x="-54" y="-9"
+              width="2.2" height="2.2"
+              rx=".7" opacity=".5"
+            />
+            <circle
+              class="sc-motion sc-particle sc-particle-b"
+              cx="-71" cy="5"
+              r="1.2" opacity=".35"
+            />
+            <rect
+              class="sc-motion sc-particle sc-particle-c"
+              x="-83" y="-3"
+              width="1.6" height="1.6"
+              rx=".5" opacity=".2"
+            />
+          </g>
+
+          <g transform="rotate(45)">
+            <rect
+              x="-12" y="-12"
+              width="24" height="24"
+              rx="5"
+              fill="#9BCDBD"
+            />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <g fill="url(#gms-sc-far)">
+    <ellipse cx="110" cy="480" rx="330" ry="122"/>
+    <ellipse cx="540" cy="480" rx="300" ry="108"/>
+    <ellipse cx="930" cy="480" rx="360" ry="132"/>
+    <ellipse cx="1330" cy="480" rx="350" ry="128"/>
+    <ellipse cx="1690" cy="480" rx="270" ry="104"/>
+    <rect x="-100" y="470" width="1800" height="130"/>
+  </g>
+
+  <g fill="url(#gms-sc-mid)">
+    <ellipse cx="-60" cy="530" rx="380" ry="98"/>
+    <ellipse cx="420" cy="530" rx="330" ry="86"/>
+    <ellipse cx="800" cy="534" rx="300" ry="80"/>
+    <ellipse cx="1260" cy="534" rx="400" ry="100"/>
+    <ellipse cx="1650" cy="530" rx="280" ry="86"/>
+    <rect x="-100" y="520" width="1800" height="80"/>
+  </g>
+
+  <g class="sc-observer-mobile">
+    <g transform="translate(1042 451.5)" fill="#20284A">
+      <g
+        fill="none"
+        stroke="#20284A"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path
+          d="M-7 -19 Q-12 -11 -15 -2 L-18 -1"
+          stroke-width="4.5"
+        />
+      </g>
+
+      <path d="M-7 -23 Q-2 -25 3 -21 Q7 -18 7 -11 L9 -4 Q7 1 -2 1 H-7 Q-12 0 -11 -6 L-10 -17 Q-10 -21 -7 -23Z"/>
+      <path d="M-3 -26 H2 V-22 H-3Z"/>
+
+      <g transform="translate(-4 14)">
+        <g transform="rotate(-19 1 -45)">
+          <path d="M-8 -46 Q-8 -52 -3 -54 Q-4 -57 0 -54 Q7 -56 10 -49 L12 -46 Q13 -44 10 -43 L10 -41 Q8 -36 3 -37 L-1 -38 Q-8 -39 -8 -46Z"/>
+        </g>
+      </g>
+
+      <path
+        d="M2 -20 Q8 -13 10 -3"
+        fill="none"
+        stroke="#20284A"
+        stroke-width="4.4"
+        stroke-linecap="round"
+      />
+      <path
+        d="M10 -3 L13 -1"
+        fill="none"
+        stroke="#20284A"
+        stroke-width="4.5"
+        stroke-linecap="round"
+      />
+    </g>
+  </g>
+
+  <g fill="#20284A">
+    <ellipse cx="1040" cy="610" rx="430" ry="160"/>
+    <ellipse cx="330" cy="628" rx="580" ry="118"/>
+    <ellipse cx="1720" cy="612" rx="330" ry="96"/>
+  </g>
+
+  <g class="sc-lantern-mobile">
+    <circle
+      class="sc-motion sc-lamplight"
+      cx="1010" cy="443.4"
+      r="56"
+      fill="url(#gms-sc-lamp)"
+    />
+    <rect
+      x="1004.5" y="436.4"
+      width="11" height="14"
+      rx="3.5"
+      fill="#FFD58F"
+    />
+    <rect
+      x="1003.5" y="433.4"
+      width="13" height="4"
+      rx="1.5"
+      fill="#20284A"
+    />
+    <path
+      d="M1006 433.4 Q1010 425.4 1014 433.4"
+      fill="none"
+      stroke="#20284A"
+      stroke-width="1.6"
+    />
+  </g>
+</svg>
+</div>
+
+<main id="main">
+
+<section class="section" id="about" aria-labelledby="about-title">
+  <div class="wrap"><div class="col">
+    <h2 id="about-title">About me</h2>
+    <p>I've played games for as long as I can remember. As a kid I spent hours in The Sims, and I could play DOOM the same evening and enjoy it just as much. The genre never mattered to me. The idea did.</p>
+    <p>As a player I’m always looking for something new to try. As a developer I start with an idea and let it decide what the game becomes.</p>
+    <p>I have more ideas than time, and they don’t all fit one genre, so the next game will probably play nothing like One Day It Blooms. I’ll keep looking after One Day It Blooms, and whatever comes next will be made the same way: by one person, with a lot of care.</p>
+    <p>I’ve been a software developer since 2018, but for years games were something I only played. Now it’s my turn, and One Day It Blooms is my first game.</p>
+    <p>I love games that look like Tiny Glades: soft light, warm colours, small worlds you'd want to live in. That's the look I aim for in my own games.</p>
+    <p>I work alone, and I use AI tools for parts of the work. What goes into a game and what stays out is always my decision.</p>
+  </div></div>
+</section>
+
+<section class="section" id="care" aria-labelledby="care-title">
+  <div class="wrap">
+    <h2 id="care-title">What I care about</h2>
+    <div class="cares">
+      <div>
+        <h3>Your time</h3>
+        <p>No ads, and you can play without paying. Anything you can buy is a small extra: a decoration, a faster bud, or a second chance for a rose that didn’t make it.</p>
+      </div>
+      <div>
+        <h3>Rules that make sense</h3>
+        <p>In One Day It Blooms the rose needs water because the soil is dry, not because a timer ran out. I want things to work the way you'd expect.</p>
+      </div>
+      <div>
+        <h3>How you feel afterwards</h3>
+        <p>I'd like you to put the phone down a little calmer than when you picked it up.</p>
+      </div>
+      <div>
+        <h3>Fair play</h3>
+        <p>No ads. You can play without paying. If you do buy something, it should be a nice extra, not a way out of a trap.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section believe" id="believe" aria-labelledby="believe-title">
+  <div class="wrap">
+    <h2 id="believe-title">What I believe</h2>
+    <p>Whoever you are and wherever you’re from, you’re welcome in my games.</p>
+    <p>If something I make inspires you to go and make something of your own, that's the best thing that could happen.</p>
+  </div>
+</section>
+
+<section class="section" id="rose-garden" aria-labelledby="game-title">
+  <div class="wrap"><div class="game">
+    <img src="assets/img/onedayitblooms/apple-touch-icon.png" width="180" height="180" alt="One Day It Blooms icon">
+    <div>
+      <h2 id="game-title">My first game: One Day It Blooms</h2>
+      <p>A calm game about growing one rose through the year. You water it, prune it, cut off faded flowers, deal with aphids and cover it before winter. It comes out on Android on 10 November 2026, free and with no ads.</p>
+      <div class="actions">
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.explovis.onedayitblooms">Pre-register on Google Play</a>
+        <a href="onedayitblooms/">More about One Day It Blooms</a>
+      </div>
+    </div>
+  </div></div>
+</section>
+
+<section class="section" id="next" aria-labelledby="next-title">
+  <div class="wrap"><div class="col">
+    <h2 id="next-title">What's next</h2>
+    <p>I have more ideas than time, and they don't all fit one genre. The next game will probably look nothing like One Day It Blooms. It will be made the same way, though: by one person, with a lot of care.</p>
+  </div></div>
+</section>
+
+<section class="section contact" id="contact" aria-labelledby="contact-title">
+  <div class="wrap"><div class="col">
+    <h2 id="contact-title">Say hello</h2>
+    <p>Ideas, questions, bug reports, or just hello. Write to me at</p>
+    <a class="mail" href="mailto:support@explovis.com">support@explovis.com</a>
+    <ul class="socials">
+      <li><a href="https://www.youtube.com/@explovisgames">YouTube</a></li>
+      <li><a href="https://www.tiktok.com/@explovisgames">TikTok</a></li>
+      <li><a href="https://www.instagram.com/explovisgames">Instagram</a></li>
+      <li><a href="https://www.reddit.com/r/explovisgames/">Reddit</a></li>
+      <li><a href="https://discord.gg/XRsfh6TCR">Discord</a></li>
+      <li><a href="https://www.facebook.com/explovisgames">Facebook</a></li>
+      <li><a href="https://www.pinterest.com/explovisgames/">Pinterest</a></li>
+    </ul>
+  </div></div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>© 2026 SIA Explovis</p>
+    <p>Made with love, in peace.</p>
+  </div>
+</footer>
+</body>
+</html>

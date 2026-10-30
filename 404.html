@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<style>
+/* 404 page. Everything is in this one file. Fonts and links start from the site root (/),
+   because GitHub Pages shows this page at whatever address was typed, however deep. */
+
+@font-face {
+  font-family: "Outfit";
+  src: url("/assets/fonts/static/Outfit-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("/assets/fonts/static/Outfit-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --ink: #22313a;
+  --night-ink: #fff7ea;
+  --night-soft: #cdd0e6;
+  --gold: #ffd27a;
+  --hills: clamp(150px, 32vh, 330px);
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #141a33;
+  color: var(--night-soft);
+  font: 18px/1.6 "Outfit", system-ui, sans-serif;
+}
+
+a {
+  color: var(--gold);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+a:hover { text-decoration-thickness: 2px; }
+
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* the whole screen is the evening sky */
+.lost {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100svh;
+  overflow: hidden;
+  isolation: isolate;
+  background: linear-gradient(180deg, #141a33 0%, #1d2547 40%, #343b69 72%, #575683 100%);
+}
+
+.sky {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.hills {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: var(--hills);
+}
+
+.message {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px calc(var(--hills) * 0.8);
+  text-align: center;
+}
+
+.code {
+  margin: 0 0 12px;
+  color: var(--gold);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+}
+
+h1 {
+  margin: 0;
+  color: var(--night-ink);
+  font-size: clamp(2.2rem, 6vw, 3.6rem);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+.message p {
+  max-width: 30em;
+  margin: 16px auto 0;
+  font-size: clamp(1.05rem, 1.8vw, 1.2rem);
+  text-wrap: pretty;
+}
+
+.message .code { margin: 0 0 12px; }
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 14px 26px;
+  margin-top: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 999px;
+  background: var(--gold);
+  color: var(--ink);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn:hover { background: #ffe1a6; }
+.btn:focus-visible { border-radius: 999px; }
+
+/* the only motion: the last light warms up behind the hills, then one shooting star */
+.glow { animation: glow 2.6s ease-out 0.2s both; }
+
+.shooting {
+  opacity: 0;
+  animation: shoot 1.4s cubic-bezier(0.25, 0.1, 0.25, 1) 1.4s;
+}
+
+@keyframes glow {
+  from { opacity: 0.3; }
+  to   { opacity: 1; }
+}
+
+@keyframes shoot {
+  0%   { opacity: 0; transform: translate(0, 0); }
+  20%  { opacity: 1; }
+  100% { opacity: 0; transform: translate(460px, 175px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glow,
+  .shooting {
+    animation: none;
+  }
+}
+
+@media (max-width: 600px) {
+  body { font-size: 17px; }
+  .message { padding: 32px 16px calc(var(--hills) * 0.75); }
+}
+</style>
+</head>
+<body>
+<main class="lost">
+  <svg class="sky" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMin slice" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#fff"/>
+        <stop offset=".5" stop-color="#fff"/>
+        <stop offset=".95" stop-color="#000"/>
+      </linearGradient>
+      <mask id="fade-out">
+        <rect width="1600" height="900" fill="url(#fade)"/>
+      </mask>
+      <linearGradient id="tail" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="-110" y2="-42">
+        <stop offset="0" stop-color="#fff7ea"/>
+        <stop offset="1" stop-color="#fff7ea" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <g fill="#fff7ea" mask="url(#fade-out)">
+      <circle cx="140" cy="186" r="0.7" opacity="0.63"/><circle cx="1091" cy="16" r="0.9" opacity="0.57"/><circle cx="160" cy="695" r="1.4" opacity="0.4"/><circle cx="12" cy="424" r="0.9" opacity="0.45"/><circle cx="1467" cy="504" r="1" opacity="0.57"/><circle cx="427" cy="5" r="1.1" opacity="0.86"/>
+      <circle cx="1425" cy="352" r="0.8" opacity="0.38"/><circle cx="151" cy="846" r="1.2" opacity="0.68"/><circle cx="875" cy="654" r="0.8" opacity="0.63"/><circle cx="343" cy="472" r="0.7" opacity="0.75"/><circle cx="513" cy="428" r="1" opacity="0.73"/><circle cx="670" cy="599" r="1.4" opacity="0.48"/>
+      <circle cx="413" cy="270" r="1" opacity="0.64"/><circle cx="229" cy="10" r="0.7" opacity="0.62"/><circle cx="697" cy="18" r="1.1" opacity="0.88"/><circle cx="1268" cy="704" r="1" opacity="0.65"/><circle cx="910" cy="100" r="1" opacity="0.61"/><circle cx="1138" cy="50" r="0.8" opacity="0.69"/>
+      <circle cx="145" cy="88" r="0.8" opacity="0.49"/><circle cx="653" cy="832" r="1" opacity="0.44"/><circle cx="1243" cy="55" r="1.4" opacity="0.72"/><circle cx="664" cy="9" r="0.8" opacity="0.42"/><circle cx="653" cy="539" r="1.2" opacity="0.79"/><circle cx="729" cy="23" r="1.4" opacity="0.73"/>
+      <circle cx="1074" cy="245" r="1.2" opacity="0.46"/><circle cx="1075" cy="200" r="1" opacity="0.55"/><circle cx="714" cy="157" r="0.8" opacity="0.38"/><circle cx="1332" cy="751" r="1.6" opacity="0.37"/><circle cx="936" cy="4" r="1.4" opacity="0.36"/><circle cx="489" cy="478" r="0.7" opacity="0.39"/>
+      <circle cx="844" cy="3" r="0.9" opacity="0.35"/><circle cx="173" cy="75" r="0.7" opacity="0.42"/><circle cx="783" cy="502" r="1" opacity="0.35"/><circle cx="1111" cy="551" r="0.7" opacity="0.6"/><circle cx="328" cy="732" r="1.4" opacity="0.8"/><circle cx="631" cy="1" r="0.9" opacity="0.66"/>
+      <circle cx="1152" cy="494" r="1" opacity="0.4"/><circle cx="704" cy="767" r="1.1" opacity="0.55"/><circle cx="768" cy="442" r="1.2" opacity="0.63"/><circle cx="651" cy="189" r="1.4" opacity="0.77"/><circle cx="289" cy="149" r="1.4" opacity="0.79"/><circle cx="255" cy="527" r="1.4" opacity="0.44"/>
+      <circle cx="783" cy="31" r="1" opacity="0.75"/><circle cx="787" cy="14" r="1.2" opacity="0.65"/><circle cx="1567" cy="679" r="0.9" opacity="0.62"/><circle cx="462" cy="737" r="0.9" opacity="0.36"/><circle cx="992" cy="26" r="1" opacity="0.48"/><circle cx="166" cy="318" r="0.9" opacity="0.57"/>
+      <circle cx="1019" cy="608" r="0.7" opacity="0.87"/><circle cx="1535" cy="187" r="1" opacity="0.73"/><circle cx="499" cy="296" r="1.6" opacity="0.42"/><circle cx="549" cy="451" r="1.2" opacity="0.8"/><circle cx="1040" cy="336" r="1.2" opacity="0.58"/><circle cx="426" cy="31" r="1.6" opacity="0.69"/>
+      <circle cx="1018" cy="126" r="1" opacity="0.42"/><circle cx="620" cy="410" r="0.8" opacity="0.73"/><circle cx="151" cy="522" r="1.1" opacity="0.63"/><circle cx="1532" cy="313" r="1.6" opacity="0.41"/><circle cx="780" cy="129" r="1" opacity="0.75"/><circle cx="416" cy="102" r="1" opacity="0.89"/>
+      <circle cx="21" cy="39" r="1.4" opacity="0.56"/><circle cx="1323" cy="405" r="0.8" opacity="0.39"/><circle cx="517" cy="150" r="0.8" opacity="0.78"/><circle cx="618" cy="392" r="0.8" opacity="0.57"/><circle cx="1584" cy="148" r="1.6" opacity="0.6"/><circle cx="1389" cy="349" r="1.1" opacity="0.77"/>
+      <circle cx="1436" cy="405" r="1" opacity="0.89"/><circle cx="1044" cy="124" r="1" opacity="0.81"/><circle cx="144" cy="119" r="0.9" opacity="0.36"/><circle cx="889" cy="302" r="1.2" opacity="0.82"/><circle cx="546" cy="378" r="0.8" opacity="0.77"/><circle cx="612" cy="11" r="1.2" opacity="0.61"/>
+      <circle cx="499" cy="607" r="1.6" opacity="0.38"/><circle cx="240" cy="554" r="1.2" opacity="0.7"/><circle cx="410" cy="726" r="1" opacity="0.41"/><circle cx="756" cy="361" r="0.7" opacity="0.71"/><circle cx="498" cy="422" r="1" opacity="0.76"/><circle cx="791" cy="325" r="1.1" opacity="0.7"/>
+      <circle cx="915" cy="101" r="7" opacity=".1"/><circle cx="915" cy="101" r="1.9"/>
+      <circle cx="1332" cy="360" r="7" opacity=".1"/><circle cx="1332" cy="360" r="1.9"/>
+      <circle cx="1074" cy="107" r="7" opacity=".1"/><circle cx="1074" cy="107" r="1.9"/>
+      <circle cx="244" cy="80" r="7" opacity=".1"/><circle cx="244" cy="80" r="1.9"/>
+      <circle cx="169" cy="185" r="7" opacity=".1"/><circle cx="169" cy="185" r="1.9"/>
+      <circle cx="72" cy="415" r="7" opacity=".1"/><circle cx="72" cy="415" r="1.9"/>
+      <circle cx="969" cy="217" r="7" opacity=".1"/><circle cx="969" cy="217" r="1.9"/>
+    </g>
+    <g transform="translate(330 120)">
+      <g class="shooting">
+        <path d="M0 0-110-42" stroke="url(#tail)" stroke-width="2.2" stroke-linecap="round"/>
+        <circle r="2" fill="#fff7ea"/>
+      </g>
+    </g>
+  </svg>
+
+  <div class="message">
+    <p class="code">404</p>
+    <h1>Nothing here but stars</h1>
+    <p>This page doesn't exist, or it has moved.</p>
+    <div class="actions">
+      <a class="btn" href="/onedayitblooms/">Go to One Day It Blooms</a>
+      <a href="/">Home page</a>
+    </div>
+  </div>
+
+  <svg class="hills" viewBox="0 0 1600 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false">
+    <defs>
+      <radialGradient id="last-light" cx="800" cy="330" r="620" gradientUnits="userSpaceOnUse" gradientTransform="translate(800 330) scale(1 .38) translate(-800 -330)">
+        <stop offset="0" stop-color="#ffb46b" stop-opacity=".55"/>
+        <stop offset=".45" stop-color="#e3a33a" stop-opacity=".18"/>
+        <stop offset="1" stop-color="#e3a33a" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+    <path d="M0 292C170 246 330 250 520 276S860 232 1060 256 1420 246 1600 262V400H0Z" fill="#3b3f6e"/>
+    <path d="M0 330C200 296 400 304 610 326S960 292 1180 312 1480 298 1600 316V400H0Z" fill="#272c55"/>
+    <path d="M0 372C260 354 560 364 800 350C900 344 960 316 1030 312C1100 308 1150 330 1240 340C1380 352 1500 350 1600 352V400H0Z" fill="#161a36"/>
+  </svg>
+</main>
+</body>
+</html>
